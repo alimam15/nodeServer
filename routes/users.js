@@ -21,11 +21,22 @@ router.post('/', (req, res) => {
     const userId = uuidv4();
 
     const newUser = { ...user, id: userId};
-
     users.push(newUser);
+
+    //users.push({...user, id: uuidv()});
+
     res.send(`The user ${user.firstName} ${user.lastName} was created`);
 
 });
+
+
+router.get('/:id', (req, res) => {
+    const {id} = req.params;
+
+    const foundUser = users.find((user) => user.id === id);
+
+    res.send(foundUser);
+})
     
 
 export default router;

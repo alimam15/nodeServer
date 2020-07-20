@@ -8,6 +8,7 @@ const router = express.Router();
 
 let users = []
 
+
 //all routes in here are starting with /users
 router.get('/', (req, res) => 
         {res.send(users);

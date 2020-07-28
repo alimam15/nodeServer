@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 
 app.use('/users', usersRoutes);
 
+
 app.get('/', (req, res) => res.send("hello from server"))
 
  

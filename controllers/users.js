@@ -26,7 +26,7 @@ export const getUser = (req, res) => {
     res.send(foundUser);}
 
 
-    
+
 
 export const deleteUser = (req,res) => {
     const {id} = req.params;

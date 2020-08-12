@@ -27,7 +27,6 @@ export const getUser = (req, res) => {
 
 
 
-
 export const deleteUser = (req,res) => {
     const {id} = req.params;
     users = users.filter((user) =>  user.id !== id);

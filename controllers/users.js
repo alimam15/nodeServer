@@ -19,6 +19,7 @@ export const createUser = (req, res) => {
     
     
     
+
     //users.push({...user, id: uuidv()});
 
     res.send(`The user ${user.firstName} ${user.lastName} was created`);}

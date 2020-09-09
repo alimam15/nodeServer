@@ -15,10 +15,9 @@ export const createUser = (req, res) => {
     const newUser = { ...user, id: userId};
     users.push(newUser);
 
+    
+    
 
-    
-    
-    
 
     //users.push({...user, id: uuidv()});
 
